@@ -1,0 +1,71 @@
+.popover_parent {
+	position: relative;
+	display: inline-block;
+}
+
+.popover {
+	display: none;
+	background: grey;
+	padding: 1em;
+	border-radius: 4px;
+	position: absolute;
+	top: 4em;
+	z-index: 1;
+	width: 200px;
+	color: #333;
+}
+
+.popover:before {
+	content: "";
+	position: absolute;
+	left: 30px;
+	top: -20px;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom: 10px solid grey;
+}
+
+.active .popover {
+	display: block;
+}
+
+.active>a {
+	background: green !important;
+	cursor: pointer;
+}
+
+section {
+	border-radius: 4px;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 3em;
+}
+
+.caret {
+	margin-top: .5em;
+	margin-left: .5em;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	vertical-align: top;
+	border-top: 5px solid #FFF;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	content: "";
+	opacity: .5;
+	filter: alpha(opacity=30);
+}
+
+.btn {
+	display: inline-block;
+	padding: 1em;
+	background: blue;
+	border-radius: 4px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.btn:hover {
+	color: inherit;
+}
